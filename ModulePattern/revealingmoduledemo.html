@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Revealing Module Pattern</title>
+    <script>
+        window.onload = function () {
+            
+            calculator.Gange(2, 5);
+            
+            
+        };
+    </script>
+</head>
+<body>
+    <div id="out"></div>
+    <script>
+        //calculator.js
+        var calculator = function (eq) {
+            //private members
+            var eqCtl = document.getElementById(eq),
+
+                //Gange x*y
+                  _gange = function (x, y) {
+                      eqCtl.innerHTML = " " + (x * y);
+                  },
+
+                // underscore is a naming-convention indicates privacy scoping
+                _add = function (x, y) {
+                    eqCtl.innerHTML = "The value of _add(x,y) = " + (x + y) ;
+                },
+
+                _substract = function (x, y) {
+                    eqCtl.innerHTML = x - y ;
+                };
+
+            //public members
+            return {
+                Add: _add,
+                Subtract: _substract,
+                Gange :_gange
+            };
+        }('out');
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+
+        //Revealing Module Pattern
+        var intel = intel || {};
+
+        var Car = function (engineType) { //class/constructor
+            //private
+            this.engine = engineType;
+        };
+
+        Car.prototype = function () {
+
+            start = function () {
+                alert('Started' + this.engine);
+            },
+
+            stop = function () {
+                alert('stopped');
+            };
+
+            //public implementation
+            return {
+                start: start,
+                stop: stop
+            };
+
+        }();
+
+        function stop() {
+            alert('New stopped');
+        }
+
+        window.onload = function () {
+            Car.prototype.start = function () {
+                alert('This is my new start: ' + this.engine);
+            }
+
+            var car = new Car('4-Cylinder');
+            var car2 = new Car('V8');
+
+            car.start();
+            car2.start();
+            stop();
+        };
+    </script>
+</head>
+<body>
+
+</body>
+</html>

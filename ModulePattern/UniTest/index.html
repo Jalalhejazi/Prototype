@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test [JavaScript]</title>
+    <link rel="stylesheet" href="lib/mocha/mocha.css">
+    <style>
+        
+        header h1 {
+            font-family:Calibri Aharoni 'Segoe UI' serif ; 
+            background-color: #f6f6f6;
+        }
+
+        footer {
+            font-family:Calibri Aharoni 'Segoe UI' serif ; 
+            background-color: #f6f6f6;
+            position:relative;
+            top:20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JavaScript UniTest </h1>
+    </header>
+    <div id="mocha"></div>
+    <script src="lib/mocha/mocha.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <!-- assertion framework -->
+    <script src="lib/chai.js"></script>
+    <script>expect = chai.expect</script>
+    <!-- ************************************************* -->
+
+    <script src="00_Test_Variable.js"></script>
+    <script src="01_Test_Functions.js"></script>
+    <script src="02_Test_Closure.js"></script>
+    <script src="03_Test_Prototype.js"></script>
+    <script src="04_Test_Module.js"></script>
+
+    <!-- ************************************************* -->
+    <!-- trigger the mocha runner -->
+    <script src="runner/mocha.js"></script>
+
+    <footer >
+        The choice of UniTest framework is mostly a matter of taste
+        <br />
+        I like to keep it <a href="http://visionmedia.github.com/mocha/" target="_blank">Simple, flexible, fun</a>
+    </footer>   
+</body>
+</html>

@@ -1,0 +1,5 @@
+C:\Training\70-480\{js} revealingmodulepattern\ModulePattern\bin\ModulePattern.dll
+C:\Training\70-480\{js} revealingmodulepattern\ModulePattern\bin\ModulePattern.pdb
+C:\Training\70-480\{js} revealingmodulepattern\ModulePattern\obj\Debug\ModulePattern.csprojResolveAssemblyReference.cache
+C:\Training\70-480\{js} revealingmodulepattern\ModulePattern\obj\Debug\ModulePattern.dll
+C:\Training\70-480\{js} revealingmodulepattern\ModulePattern\obj\Debug\ModulePattern.pdb
